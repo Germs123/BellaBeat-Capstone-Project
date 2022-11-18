@@ -31,3 +31,19 @@ Assumptions for the Analysis:
 "Calories" refers to calories burned
 
 Distance and Calories are the most important variables for this analysis. 
+![Sheet 1](https://user-images.githubusercontent.com/115740059/202819654-876d9e94-1159-47b5-a303-8387a8fbcda2.png)
+
+# Share
+
+What insights can we gain from this graph?
+
+* There seems to be a positvie correlation between the total distance traveled vs. total calories burned from participants indicated from the scatter-plot grapgh 
+
+p-value (significance):	< 0.0001
+
+R-Squared ≈ 0.4073
+
+# Act
+
+Final recommendations for marketing strategy:
+1. Intergrate a software mechanic that engages users to track their travel distance (steps) with reward points to encourage their daily, weekly and monthly physical activity. Reward points for conistensy in their progress such as daily, weekly and monthly goals. These reward points can be honored within the Bellabeat app and can be used for discounts on Health and Fitness sponsered products.
