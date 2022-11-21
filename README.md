@@ -3,9 +3,8 @@ Project Overview:
 
 Working alongside a team of marketing analyst at Bellabeat, a health focused high-tech manufacturer of products for women. Urška Sršen, Bellabeat's co-founder and chief creative officer believes that analyzing smart device fitness usage data will help gain insight in growth opportunities for the company. I have been tasked to collect information on one of Bellabeats products and use this information to make high level recommendations for how these trends can inform Bellabeats marketing strategy.
 # Ask
-Sršen asks you to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart
-devices. She then wants you to select one Bellabeat product to apply these insights to in your presentation. These questions
-will guide your analysis:
+Sršen asks me to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart
+devices. She then wants me to select one Bellabeat product to apply these insights to my presentation.
 1. What are some trends in smart device usage?
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
