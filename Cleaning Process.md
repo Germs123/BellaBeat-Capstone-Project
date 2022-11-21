@@ -1,0 +1,87 @@
+# Steps
+
+## 1. Null Values
+
+First I check for any `NULL` values in the "Daily_Activity" table because it contains all the columns from the dataset merged into one.
+
+```SELECT
+  *
+FROM
+  `bellabeat-case-study-368121.BellaBeat_Analysis.Daily_Activity`
+WHERE
+  Id IS NULL
+  OR ActivityDate IS NULL
+  OR TotalSteps IS NULL
+  OR TrackerDistance IS NULL
+  OR LoggedActivitiesDistance IS NULL
+  OR VeryActiveDistance IS NULL
+  OR ModeratelyActiveDistance IS NULL
+  OR LightActiveDistance IS NULL
+  OR SedentaryActiveDistance IS NULL
+  OR VeryActiveMinutes IS NULL
+  OR FairlyActiveMinutes IS NULL
+  OR LightlyActiveMinutes IS NULL
+  OR SedentaryMinutes IS NULL
+  OR Calories IS NULL
+  OR Calories>0
+  ```
+  
+  No `NULL` values were found within the dataset.
+  
+  ## 2. Duplicates
+  
+  I then proceeded to check for any duplicates within the data we are working with.
+  
+  ```SELECT
+  Id,
+  ActivityDate,
+  COUNT(*)
+FROM
+   `bellabeat-case-study-368121.BellaBeat_Analysis.Daily_Activity`
+GROUP BY
+  Id,
+  ActivityDate
+HAVING
+  COUNT(*) > 1
+  ```
+  
+  No values were returned using the `COUNT(*) > 1 ` condition after running the code. This tells me that there is no duplicates in the table because no value appeared that contained a higher `COUNT` than 1.
+  
+  ## Formatting
+  
+  3. Next was converting the decimals to whole values using the `CAST` and `INT64` functions.
+
+```SELECT
+  CAST(TotalDistance AS INT64) AS TotalDistance2,
+  + CAST(VeryActiveDistance AS INT64) AS VeryActiveDistance2,
+  + CAST(ModeratelyActiveDistance AS INT64) AS ModeratelyActiveDistance,
+  + CAST(LightActiveDistance AS INT64) AS ModeratelyActiveDistance,
+  + CAST(LightActiveDistance AS INT64) AS LightActiveDistance,
+  + CAST(SedentaryActiveDistance AS INT64) AS SedentaryActiveDistance
+FROM
+  `bellabeat-case-study-368121.BellaBeat_Analysis.Daily_Activity`
+  ```
+  
+  This allows us to work with whole numbers going forward.
+  
+  ## Making a new Table
+  
+  ```SELECT
+  Id,
+  ActivityDate,
+  TotalSteps,
+  CAST(TotalDistance AS INT64) AS Distance,
+  + CAST(VeryActiveDistance AS INT64) AS VeryActiveDistance,
+  + CAST(ModeratelyActiveDistance AS INT64) AS ModeratelyActiveDistance,
+  + CAST(LightActiveDistance AS INT64) AS LightlyActiveDistance,
+  + CAST(SedentaryActiveDistance AS INT64) AS SedentaryActiveDistance,
+  VeryActiveMinutes,
+  FairlyActiveMinutes AS ModeratelyActiveMinutes,
+  LightlyActiveMinutes,
+  SedentaryMinutes AS SedentaryActiveMinutes,
+  Calories
+FROM
+  `bellabeat-case-study-368121.BellaBeat_Analysis.Daily_Activity`
+  ```
+  
+  I then create a new table ready for analysis and ready to export on to a spreadsheet. 
