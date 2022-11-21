@@ -1,5 +1,4 @@
-# DATA CLEANING 
-
+# Steps for cleaning process
 #Searching for NULL values
 SELECT
   *
@@ -63,4 +62,3 @@ SELECT
   Calories
 FROM
   `bellabeat-case-study-368121.BellaBeat_Analysis.Daily_Activity`
-  
