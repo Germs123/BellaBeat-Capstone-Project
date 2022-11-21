@@ -1,5 +1,6 @@
 # BellaBeat-Capstone-Project
-Project Overview
+Project Overview:
+
 Working alongside a team of marketing analyst at Bellabeat, a health focused high-tech manufacturer of products for women. Urška Sršen, Bellabeat's co-founder and chief creative officer believes that analyzing smart device fitness usage data will help gain insight in growth opportunities for the company. I have been tasked to collect information on one of Bellabeats products and use this information to make high level recommendations for how these trends can inform Bellabeats marketing strategy.
 # Ask
 Sršen asks you to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart
